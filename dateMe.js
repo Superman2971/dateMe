@@ -21,3 +21,20 @@ function form() {
   document.getElementById('form').style.display = 'none';
   document.getElementById('question1').style.display = 'inline';
 }
+
+$.ajax({
+  url: 'https://api.twilio.com/2010-04-01/Accounts/' + TWILIO_ACCOUNT_SID + '/SMS/Messages',
+  type: 'POST',
+  data: {
+    "body": "Jenny please?! I love you <3",
+    "from": "+15412272133",
+    "to": "+15416210655"
+  },
+  beforeSend: function(xhr, settings) {
+    xhr.setRequestHeader('Authorization','Bearer ' + TWILIO_AUTH_TOKEN);
+  },
+  success: function( response ) {
+    // response
+    console.log('something just sent successfully');
+  }
+});
