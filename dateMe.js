@@ -1,9 +1,3 @@
-$(document).ready(function() {
-  $('#testing').click(function() {
-    console.log('working');
-  });
-});
-
 // Question #1
 function question1() {
   document.getElementById('question1').style.display = 'none';
@@ -24,4 +18,6 @@ function question3() {
 
 function form() {
   console.log('message me using twillio api');
+  document.getElementById('form').style.display = 'none';
+  document.getElementById('question1').style.display = 'inline';
 }
