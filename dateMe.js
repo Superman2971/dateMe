@@ -6,15 +6,22 @@ $(document).ready(function() {
 
 // Question #1
 function question1() {
-  console.log('question1');
+  document.getElementById('question1').style.display = 'none';
+  document.getElementById('question2').style.display = 'inline';
 }
 
 // Question #2
 function question2() {
-  console.log('question2');
+  document.getElementById('question2').style.display = 'none';
+  document.getElementById('question3').style.display = 'inline';
 }
 
 // Question #3
 function question3() {
-  console.log('question3');
+  document.getElementById('question3').style.display = 'none';
+  document.getElementById('form').style.display = 'inline';
+}
+
+function form() {
+  console.log('message me using twillio api');
 }
