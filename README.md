@@ -3,6 +3,8 @@ In my desperation to get a date and inability to talk to women, I've decided to 
 
 #### Yay! Hope it works.
 
+## Hosted at: http://dateme.bitballoon.com/
+
 ## Plan for the build
 Dating App V2
 - 3 Questions followed by a form with Twillio text to me
